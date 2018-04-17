@@ -1,7 +1,0 @@
-FROM golang:1.10.1
-
-WORKDIR /go/src/mcquay.me/lim
-
-COPY . .
-
-RUN CGO_ENABLED=0 GOOS=linux go build -o /usr/local/bin/lim .
